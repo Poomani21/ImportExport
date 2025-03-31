@@ -41,10 +41,10 @@ class UsersImport implements ToModel, WithHeadingRow, WithChunkReading, ShouldQu
             'phone'       => $row['phone'] ?? null,
             'description' => $row['description'] ?? null,
             'pincode'     => $row['pincode'] ?? null,
-            'city'        => $row['city'] ?? 'anna nagar',
-            'state'       => $row['state'] ?? 'chennai',
-            'country'     => $row['country'] ?? 'india',
-            'gender'      => $row['gender'] ?? 'male',
+            'city'        => $row['city'] ?? null,
+            'state'       => $row['state'] ?? null,
+            'country'     => $row['country'] ?? null,
+            'gender'      => $row['gender'] ?? null,
             'created_at'  => now(), // Add current timestamp for created_at
             'updated_at'  => now(), // Add current timestamp for updated_at
         
